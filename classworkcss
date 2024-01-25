@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --Marineblue: hsl(213, 96%, 18%);
+  --Purplishblue: hsl(243, 100%, 62%);
+  --Pastelblue: hsl(228, 100%, 84%);
+  --Lightblue: hsl(206, 94%, 87%);
+  --Strawberryred: hsl(354, 84%, 57%);
+  --Coolgray: hsl(231, 11%, 63%);
+  --Lightgray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+  --para: 16px;
+  --family: "Ubuntu", "Sans-Serif";
+  --fw-semi: 400;
+  --fw-bold: 500;
+  --fw-xbold: 700;
+}
+body {
+  background-color: var(--Magnolia);
+}
+
+main {
+  background-image: url("../assets/images/bg-sidebar-mobile.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  position: relative;
+}
+/* main div{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    border: 1px solid var(--White);
+} */
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  border: 1px solid var(--White);
+}
+.one {
+  background-color: var(--Lightblue);
+  color: var(--Marineblue);
+}
+
+.nav-btn :nth-child(1):hover {
+  background-color: var(--Lightblue);
+  color: var(--Marineblue);
+}
+
+section {
+  width: 200px;
+  position: absolute;
+  top: 20%;
+  background-color: var(--Alabaster);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid var(--Marineblue);
+  outline: none;
+}
+.top h4,
+label {
+  color: var(--Marineblue);
+}
+p {
+  color: var(--Coolgray);
+}
+::placeholder {
+  color: var(--Coolgray) !important;
+}
+.next-btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--White);
+}
+.next-btn .btn {
+  right: -60%;
+  position: relative;
+  background-color: var(--Marineblue);
+  color: var(--Lightblue);
+}
+
+/* madia query */
+
+@media (min-width: 600px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .main-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75vh;
+    background-color: var(--White);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  main {
+    width: 30% !important;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 10px;
+  }
+  section {
+    width: 60% !important;
+    height: 70vh;
+    margin-top: 2.5rem;
+  }
+  main,
+  section {
+    position: static;
+    background-color: var(--White);
+  }
+
+  .nav-btn :nth-child(1) {
+    margin-top: 0;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-btn {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  .nav-content span {
+    color: var(--Coolgray);
+  }
+  .nav-content h5 {
+    color: var(--White);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --Marineblue: hsl(213, 96%, 18%);
+  --Purplishblue: hsl(243, 100%, 62%);
+  --Pastelblue: hsl(228, 100%, 84%);
+  --Lightblue: hsl(206, 94%, 87%);
+  --Strawberryred: hsl(354, 84%, 57%);
+  --Coolgray: hsl(231, 11%, 63%);
+  --Lightgray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+  --para: 16px;
+  --family: "Ubuntu", "Sans-Serif";
+  --fw-semi: 400;
+  --fw-bold: 500;
+  --fw-xbold: 700;
+}
+body {
+  background-color: var(--Magnolia);
+}
+
+main {
+  background-image: url("../assets/images/bg-sidebar-mobile.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  position: relative;
+}
+/* main div{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    border: 1px solid var(--White);
+} */
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  border: 1px solid var(--White);
+}
+.one {
+  background-color: var(--Lightblue);
+  color: var(--Marineblue);
+}
+
+.nav-btn :nth-child(1):hover {
+  background-color: var(--Lightblue);
+  color: var(--Marineblue);
+}
+
+section {
+  width: 200px;
+  position: absolute;
+  top: 20%;
+  background-color: var(--Alabaster);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid var(--Marineblue);
+  outline: none;
+}
+.top h4,
+label {
+  color: var(--Marineblue);
+}
+p {
+  color: var(--Coolgray);
+}
+::placeholder {
+  color: var(--Coolgray) !important;
+}
+.next-btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--White);
+}
+.next-btn .btn {
+  right: -60%;
+  position: relative;
+  background-color: var(--Marineblue);
+  color: var(--Lightblue);
+}
+
+/* madia query */
+
+@media (min-width: 600px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .main-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75vh;
+    background-color: var(--White);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  main {
+    width: 30% !important;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 10px;
+  }
+  section {
+    width: 60% !important;
+    height: 70vh;
+    margin-top: 2.5rem;
+  }
+  main,
+  section {
+    position: static;
+    background-color: var(--White);
+  }
+
+  .nav-btn :nth-child(1) {
+    margin-top: 0;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-btn {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  .nav-content span {
+    color: var(--Coolgray);
+  }
+  .nav-content h5 {
+    color: var(--White);
+  }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Step 2</title>
+
+    <!-- bootstrap css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/step2.css" />
+  </head>
+  <body class="">
+    <div class="main-container shadow-lg">
+      <main class="">
+        <div
+          class="nav-btn d-md-flex justify-content-evenly align-items-center w-md-100"
+        >
+          <div class="one">
+            <h4>1</h4>
+          </div>
+          <div class="nav-content w-75 d-none d-lg-block">
+            <span>STEP 1</span>
+            <h5>YOUR INFO</h5>
+          </div>
+        </div>
+
+        <div
+          class="nav-btn w-md-100 d-md-flex justify-content-evenly align-items-center"
+        >
+          <div class="two ms-3 ms-lg-0">
+            <h4>2</h4>
+          </div>
+          <div class="nav-content w-75 d-none d-lg-block">
+            <span>STEP 2</span>
+            <h5>SELECT PLAN</h5>
+          </div>
+        </div>
+
+        <div
+          class="nav-btn w-md-100 d-md-flex justify-content-evenly align-items-center"
+        >
+          <div class="three mx-3 mx-lg-0">
+            <h4>3</h4>
+          </div>
+          <div class="nav-content w-75 d-none d-lg-block">
+            <span>STEP 3</span>
+            <h5>ADD-ONS</h5>
+          </div>
+        </div>
+
+        <div
+          class="nav-btn w-md-100 d-md-flex justify-content-evenly align-items-center"
+        >
+          <div class="four">
+            <h4>4</h4>
+          </div>
+          <div class="nav-content w-75 d-none d-lg-block">
+            <span>STEP 4</span>
+            <h5>SUMMARY</h5>
+          </div>
+        </div>
+      </main>
+
+      <section class="main-section col-10 offset-1 offset-lg-0 p-3">
+        <div class="top mb-3">
+          <h4>Select your plan</h4>
+          <p>You have option of monthly or yearly billing</p>
+        </div>
+
+        <!-- form -->
+        <div class="row gap-3 gap-md-3 justify-content-md-between">
+          <div class="box col-12 col-md-3">
+            <div class="box-icon ">
+              <img src="./assets/images/icon-arcade.svg" alt="">
+            </div>
+            <div class="box-content ms-4">
+              <h4>Arcade</h4>
+              <p>$9/mo</p>
+            </div>
+          </div>
+
+          <div class="box col-12 col-md-3">
+            <div class="box-icon">
+              <img src="./assets/images/icon-advanced.svg" alt="">
+            </div>
+            <div class="box-content ms-4">
+              <h4>Advanced</h4>
+              <p>$12/mo</p>
+            </div>
+          </div>
+          <div class="box col-12 col-md-3">
+            <div class="box-icon">
+              <img src="./assets/images/icon-pro.svg" alt="">
+            </div>
+            <div class="box-content ms-4">
+              <h4>Pro</h4>
+              <p>$15/mo</p>
+            </div>
+          </div>
+          <div class="box bg-info col-12">
+            
+          </div>
+        </div>
+
+        <!-- md, lg button -->
+        <div class="btn-container d-none d-md-flex justify-content-between">
+          <a class="btn btn-lg mb-3" href="./step2.html">Next Step</a>
+          <a class="btn btn-lg mb-3" href="./step2.html">Next Step</a>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- mobile button -->
+    <div
+      class="next-btn container py-3 d-md-none d-flex justify-content-between"
+    >
+      <a class="btn btn-lg mb-3" href="./index.html">Go Back</a>
+      <a class="btn btn-lg mb-3" href="./step3.html">Next Step</a>
+    </div>
+  </body>
+</html>
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --Marineblue: hsl(213, 96%, 18%);
+  --Purplishblue: hsl(243, 100%, 62%);
+  --Pastelblue: hsl(228, 100%, 84%);
+  --Lightblue: hsl(206, 94%, 87%);
+  --Strawberryred: hsl(354, 84%, 57%);
+  --Coolgray: hsl(231, 11%, 63%);
+  --Lightgray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+  --para: 16px;
+  --family: "Ubuntu", "Sans-Serif";
+  --fw-semi: 400;
+  --fw-bold: 500;
+  --fw-xbold: 700;
+}
+a, button, li, a:active, a:focus{
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  box-shadow: none;
+}
+body {
+  background-color: var(--Magnolia);
+  font-family: var(--family);
+}
+
+main {
+  background-image: url("../assets/images/bg-sidebar-mobile.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  position: relative;
+}
+/* .main-container{
+  height: 75vh;
+} */
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White);
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  border: 1px solid var(--White);
+}
+.two {
+  background-color: var(--Lightblue);
+  color: var(--Marineblue);
+}
+
+.nav-btn :nth-child(1):hover {
+  background-color: var(--Lightblue);
+  color: var(--Marineblue);
+}
+
+section {
+  width: 200px;
+  position: absolute;
+  top: 20%;
+  background-color: var(--Alabaster);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.box{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--Marineblue);
+  border-radius: 10px;
+}
+.box-content{
+  line-height: 6px;
+}
+.box-content b{
+  color: var(--Marineblue);
+}
+.box-content p{
+  color: var(--Coolgray);
+}
+
+.top h4 {
+  color: var(--Marineblue);
+}
+p {
+  color: var(--Coolgray);
+}
+
+.next-btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--White);
+}
+.next-btn .btn {
+  position: relative;
+  background-color: var(--Marineblue);
+  color: var(--Lightblue);
+}
+.next-btn :nth-child(1){
+  background-color: var(--White) !important;
+  color: var(--Marineblue);
+}
+
+.btn-container{
+  margin-top: 2rem;
+}
+.btn-container a{
+  background-color: var(--Marineblue);
+  color: var(--Lightblue);
+  border: none;
+  text-decoration: none;
+}
+.btn-container a:hover{
+  background-color: var(--Marineblue);
+  color: var(--Lightblue);
+  opacity: .9;
+}
+/* madia query */
+
+@media (min-width: 768px) and (max-width: 900px){
+  section{
+    margin-top: 2rem;
+  }
+} 
+
+@media (min-width: 900px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .main-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75vh;
+    background-color: var(--White);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  main {
+    width: 30% !important;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 10px;
+  }
+  section {
+    width: 60% !important;
+    height: 70vh;
+    margin-top: 2.5rem;
+  }
+  main,
+  section {
+    position: static;
+    background-color: var(--White);
+  }
+
+  .nav-btn :nth-child(1) {
+    margin-top: 0;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-btn {
+    margin-top: 2rem;
+     margin-left: 1.5rem;
+  }
+
+  .nav-content span {
+    color: var(--Coolgray);
+  }
+  .nav-content h5 {
+    color: var(--White);
+  }
+}
+<p style="color: blue; margin-left: 20px;"><b>Monthly</b></p>
+
+            <div class="form-check form-switch form-check-reverse" style="margin-left: 20px" >
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+            </div>
+            <p style="color: grey;">Yearly</p>
